@@ -11,5 +11,16 @@ config_version=5
 [application]
 
 config/name="game"
+config/version="0.0.1"
+run/main_scene="uid://81oasc4dno4v"
 config/features=PackedStringArray("4.4", "Forward Plus")
-config/icon="res://icon.svg"
+config/icon="uid://ctlcya3n47jgu"
+
+[autoload]
+
+User="*res://scripts/core/user.gd"
+
+[display]
+
+window/size/viewport_width=1280
+window/size/viewport_height=720
