@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://81oasc4dno4v"]
+[gd_scene load_steps=3 format=3 uid="uid://81oasc4dno4v"]
 
 [ext_resource type="Script" uid="uid://kr4d6vyjot5h" path="res://scripts/ui/main_menu.gd" id="1_sl1te"]
+[ext_resource type="Theme" uid="uid://dkg1s4n6tqs0e" path="res://themes/main_menu.theme" id="2_fe2o3"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -33,14 +34,19 @@ grow_vertical = 2
 
 [node name="PlayButton" type="Button" parent="Buttons"]
 layout_mode = 2
+theme = ExtResource("2_fe2o3")
 text = "Play"
 
 [node name="SettingsButton" type="Button" parent="Buttons"]
 layout_mode = 2
+theme = ExtResource("2_fe2o3")
 text = "Settings"
 
 [node name="QuitButton" type="Button" parent="Buttons"]
 layout_mode = 2
+theme = ExtResource("2_fe2o3")
 text = "Quit"
 
+[connection signal="pressed" from="Buttons/PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="Buttons/SettingsButton" to="." method="_on_settings_button_pressed"]
 [connection signal="pressed" from="Buttons/QuitButton" to="." method="_on_quit_button_pressed"]
