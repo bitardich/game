@@ -6,7 +6,7 @@ extends CharacterBody3D
 var gravity: float = ProjectSettings.get_setting("physics/3d/default_gravity")
 var mouse_sense: float = 0.002
 var def_speed: float = 4.0
-var jump_speed: float = 6.0
+var jump_speed: float = 2.0
 
 func _ready() -> void:
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
