@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bfktep65kq23q"
-path.s3tc="res://.godot/imported/penek_penek.png-bf8619f8bd13b1f1cafa5a3eea9311f6.s3tc.ctex"
+uid="uid://blth60if3lrmy"
+path.s3tc="res://.godot/imported/axe_axe.png-682ac09a1a07ad4c0a0a8bf4cf61b91a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "e8ca564cb6185d2d697ab73cff4056f2"
+"md5": "a483ac88c4ac3840d36d9908a6ccf24f"
 }
 
 [deps]
 
-source_file="res://assets/models/penek_penek.png"
-dest_files=["res://.godot/imported/penek_penek.png-bf8619f8bd13b1f1cafa5a3eea9311f6.s3tc.ctex"]
+source_file="res://assets/models/axe_axe.png"
+dest_files=["res://.godot/imported/axe_axe.png-682ac09a1a07ad4c0a0a8bf4cf61b91a.s3tc.ctex"]
 
 [params]
 
