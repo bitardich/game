@@ -17,13 +17,12 @@ func _unhandled_input(event): #govnokod
     if event is InputEventMouseMotion:
         rotate_y(-event.relative.x * mouse_sens)
         rotation_x -= event.relative.y * mouse_sens
-        rotation_x = clamp(rotation_x, deg_to_rad(-40), deg_to_rad(60))
-        head.rotation.x = rotation_x
+        rotation_x = clamp(rotation_x, deg_to_rad(-80), deg_to_rad(80))
+        head.rotation.x = rotation_x # fix
 
 func _physics_process(delta):
     if not is_on_floor():
         velocity.y -= gravity * delta
-
     if Input.is_action_just_pressed("move_jump") and is_on_floor():
         velocity.y = jump_vel
 
