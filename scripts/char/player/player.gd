@@ -1,5 +1,7 @@
 extends CharacterBody3D
 
+@onready var config_loader = preload("res://scripts/autoload/config_manager.gd").new()
+
 @onready var head = $Head
 @onready var camera = $Head/Camera3D
 @onready var inventory_ui = $Inventory
@@ -13,6 +15,8 @@ extends CharacterBody3D
 var inventory_is_open: bool = false
 
 func _ready() -> void:
+	add_child(config_loader)
+	mouse_sens = config_loader.mouse_sens
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
 func _input(event: InputEvent):
@@ -30,16 +34,18 @@ func _input(event: InputEvent):
 func _physics_process(delta):
 	if not is_on_floor():
 		velocity.y -= gravity * delta
-
+	if Input.is_action_just_pressed("move_jump") and is_on_floor():
+		velocity.y = jump_vel
 
 	var input_dir = Vector3(0,0,0)
 	var direction = Vector3()
 
-	input_dir = Input.get_vector("move_left", "move_right", "move_up", "move_back")
+	input_dir = Input.get_vector("move_left", "move_right", "move_up", "move_down")
 	direction = (head.transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
  
 	velocity.x = lerp(velocity.x, direction.x * speed, accel * delta)
 	velocity.z = lerp(velocity.z, direction.z * speed, accel * delta)
+	
 	move_and_slide()
 
 func toggle_inventory():

@@ -16,6 +16,10 @@ run/main_scene="uid://ri5p0pwkouj3"
 config/features=PackedStringArray("4.4", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+ConfigManager="*res://scripts/autoload/config_manager.gd"
+
 [input]
 
 move_up={
