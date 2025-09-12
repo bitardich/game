@@ -2,26 +2,31 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bqui66v7tvbv"
-path="res://.godot/imported/axe.png-ff4607afe8bf165345265e3d6477f548.ctex"
+uid="uid://blth60if3lrmy"
+path.s3tc="res://.godot/imported/axe.png-ff4607afe8bf165345265e3d6477f548.s3tc.ctex"
+path.etc2="res://.godot/imported/axe.png-ff4607afe8bf165345265e3d6477f548.etc2.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc", "etc2_astc"],
+"vram_texture": true
+}
+generator_parameters={
+"md5": "a483ac88c4ac3840d36d9908a6ccf24f"
 }
 
 [deps]
 
 source_file="res://assets/textures/axe.png"
-dest_files=["res://.godot/imported/axe.png-ff4607afe8bf165345265e3d6477f548.ctex"]
+dest_files=["res://.godot/imported/axe.png-ff4607afe8bf165345265e3d6477f548.s3tc.ctex", "res://.godot/imported/axe.png-ff4607afe8bf165345265e3d6477f548.etc2.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=false
+mipmaps/generate=true
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -31,4 +36,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0
